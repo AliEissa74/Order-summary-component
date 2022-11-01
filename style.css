@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  border: 0;
+  outline: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 50%;
+}
+
+.flip-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  transform: rotate(180deg);
+  opacity: 0.7;
+}
+
+.container {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 450px;
+  height: 680px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.container .card-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container h1,
+p {
+  width: 300px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.container h1 {
+  margin-top: 30px;
+  color: hsl(223, 47%, 23%);
+}
+
+.container p {
+  color: hsl(224, 23%, 55%);
+}
+
+/* plan part start */
+.plan {
+  margin: 0 auto;
+  width: 70%;
+  height: 100px;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+/* music icon */
+.plan img {
+  width: 50px;
+  height: 50px;
+}
+/* change link */
+.plan a {
+  color: hsl(245, 75%, 52%);
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.plan a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.plan p {
+  margin-right: 50px;
+}
+
+.plan span {
+  color: hsl(223, 47%, 23%);
+  font-weight: bolder;
+}
+
+.btn {
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin: 10px auto;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 12px 14px -3px hsl(245deg 50% 78%);
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.cancel {
+  display: block;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  color: hsl(224, 23%, 55%);
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
